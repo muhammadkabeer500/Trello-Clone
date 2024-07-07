@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    background-color: white;
+    color: #282b2f;
+}
+
+body {
+    background: rgb(174, 180, 186);
+    background: linear-gradient(90deg, rgb(139, 154, 170) 0%, rgb(99, 119, 133) 100%, rgb(185, 196, 198) 35%);
+}
+header{
+    background-color: #000;
+    color: #ccc;
+    text-align: center;
+}
+
+
+
+/* sections start  */
+
+main {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.column {
+    min-height: 150px;
+    min-width: 300px;
+    border-radius: 15px;
+    background-color: #F1F2F4;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 10px #666;
+    position: relative;
+}
+
+.column>h6 {
+    padding-top: 12px;
+    margin-bottom: 20px;
+    margin-inline: 25px;
+    font-size: 1.2rem;
+}
+
+.column>h6>i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    padding: 5px 5px 5px 8px;
+    border-radius: 5px;
+}
+
+.column>h6>i:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.column>p {
+    min-height: 48px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px #666;
+    margin-inline: 15px;
+    border-radius: 10px;
+    padding: 10px 8px 8px 8px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column>p:hover {
+    cursor: pointer;
+}
+
+.column>p>i {
+    display: none;
+    transition: 0.4s;
+    height: 30px;
+    width: 35px;
+    padding: 6px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.column>p>i:hover {
+    background-color: #ccc;
+}
+
+.column>p:hover>i {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+
+    color: #000;
+}
+
+.column>form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.column>form>.addTask {
+    width: 90%;
+    padding: 5px;
+    outline: none;
+    margin-top: 15px;
+}
+
+.column>form>.addTask::placeholder {
+    font-size: 14px;
+}
+
+.column>form>.addTask:focus {
+    border: 2px solid rgb(124, 124, 134);
+}
+
+.column>form>.addTask1 {
+    border: 2px solid red !important;
+    width: 90%;
+    padding: 5px;
+    outline: none;
+    margin-top: 15px;
+}
+
+.column>form>.addTask1::placeholder {
+    font-size: 14px;
+}
+
+#addCard {
+    height: 35px;
+    min-width: 100px;
+    margin: 15px 0px 0px 15px !important;
+    background-color: #fff;
+    color: black;
+    outline: none;
+    transition: 0.3s;
+}
+
+#addCard:hover {
+    background-color: #5c616a;
+    color: white;
+    border: 1px solid #848990;
+}
+
+#addCard:active {
+    border: 2px solid #fff;
+ 
+}
+
+
+
+footer {
+    min-height: 65px;
+    width: 100vw;
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>h5>a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+    footer>h5>a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    footer>h5>a {
+        font-size: 1rem;
+    }
+    .nav2-table {
+        height: 25px;
+        width: 60px;
+        font-size: 0.2rem;
+    }
+    .nav2-left>h6 {
+        font-size: 0.8rem !important;
+    }
+    .nav2-left>h5 {
+        font-size: 1rem !important;
+    }
+    footer>h5>a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nav2-left>h6 {
+        font-size: 0.7rem !important;
+    }
+    .nav2-table {
+        height: 25px;
+        width: 30px;
+        font-size: 2px !important;
+    }
+}
